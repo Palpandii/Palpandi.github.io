@@ -1,0 +1,121 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala | Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Bala<span>.</span></div>
+        <ul class="nav-links">
+            <li><a onclick="showSection('home')" id="link-home" class="active">Home</a></li>
+            <li><a onclick="showSection('about')" id="link-about">About Me</a></li>
+            <li><a onclick="showSection('projects')" id="link-projects">Projects</a></li>
+            <li><a onclick="showSection('resume')" id="link-resume">My Resume</a></li>
+            <li><a onclick="showSection('contact')" id="link-contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="active-section">
+        <div class="container">
+            <div class="profile-glow">
+                <img src="bg.jpg.png" alt="Bala"> </div>
+            <div class="hero-text">
+                <h3>Hi, I'm a <span id="typing"></span></h3>
+                <h1>Palpandi M</h1>
+                <p>Java Developer specialized in backend architecture and high-performance APIs.</p>
+                <div class="btns">
+                    <a href="#" class="btn btn-cyan">Download CV</a>
+                    <button class="btn btn-outline" onclick="showSection('projects')">My Projects</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="content-box">
+                <h2 class="section-title">About Me</h2>
+                <p>I am a backend specialist with a passion for Java ecosystems. I transform complex business logic into efficient, clean code.</p>
+                <div class="skills-grid">
+                    <span class="tag">Core Java</span> <span class="tag">Adanced Java</span>
+                    <span class="tag">MySQL</span> <span class="tag">Git and Github</span>
+                    <span class="tag">Spring Boot</span> <span class="tag">HTML5</span>
+                    <span class="tag">CSS</span> <span class="tag">JavaScript</span>
+                    <span class="tag">REACT</span> <span class="tag">Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="flex-direction: column;">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>E-Commerce Backend</h3>
+                <p>Spring Boot & JWT Auth</p>
+            </div>
+            <div class="card">
+                <h3>Banking System</h3>
+                <p>Microservices Architecture</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" style="flex-direction: column;">
+        <h2 class="section-title">My Resume</h2>
+        <div class="resume-container">
+            <div class="res-col">
+                <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                <div class="res-item">
+                    <h4>Junior Java Developer</h4>
+                    <p>2025 - Present</p>
+                </div>
+                <div class="res-item">
+                    <h4>Web Development</h4>
+                    <p>3 Months</p>
+                </div>
+            </div>
+            <div class="res-col">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="res-item">
+                    <h4>P.G.Diploma in Computer Application</h4>
+                    <p>2023 - 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="content-box">
+                <h2 class="section-title">Contact Me</h2>
+                <p>Email: palpandijava@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/palpandi02" target="_blank">
+                        <i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Palpandii" target="_blank">
+                        <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea rows="5" placeholder="Message"></textarea>
+                <button type="button" class="btn btn-cyan">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
